@@ -1,0 +1,10 @@
+This directory is for storing local image assets.
+
+Currently, the website uses images from Unsplash CDN.
+When you want to use local images, place them here and update the image paths in index.html.
+
+Recommended image formats:
+- .jpg / .jpeg for photos
+- .png for images with transparency
+- .svg for logos and icons
+- .webp for optimized modern browsers
