@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TanBC — Tanzanians in British Columbia</title>
+
+  <!-- External Libraries -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/components/buttons.css">
+  <link rel="stylesheet" href="assets/css/components/cards.css">
+  <link rel="stylesheet" href="assets/css/components/nav.css">
+</head>
+<body>
+
+<div id="wrapper" class="relative">
+
+  <!-- NAV -->
+  <header class="fixed z-50 top-0 left-0 right-0 nav-blur bg-white/80 border-b border-black/5">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="#top" class="flex items-center gap-3 group">
+          <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[var(--accent)] to-emerald-600 flex items-center justify-center shadow-lg shadow-emerald-500/20 group-hover:shadow-emerald-500/30 transition-shadow">
+            <span class="text-white font-bold text-sm">T</span>
+          </div>
+          <span class="font-semibold text-lg tracking-tight">TanBC</span>
+        </a>
+
+        <!-- Nav Links -->
+        <nav class="hidden md:flex items-center gap-1">
+          <a href="#community" class="px-4 py-2 text-sm text-[var(--fg-muted)] hover:text-[var(--fg)] hover:bg-black/5 rounded-lg transition-all">Community</a>
+          <a href="#services" class="px-4 py-2 text-sm text-[var(--fg-muted)] hover:text-[var(--fg)] hover:bg-black/5 rounded-lg transition-all">Services</a>
+          <a href="#about" class="px-4 py-2 text-sm text-[var(--fg-muted)] hover:text-[var(--fg)] hover:bg-black/5 rounded-lg transition-all">About</a>
+          <a href="#contact" class="px-4 py-2 text-sm text-[var(--fg-muted)] hover:text-[var(--fg)] hover:bg-black/5 rounded-lg transition-all">Contact</a>
+        </nav>
+
+        <!-- CTA -->
+        <div class="flex items-center gap-3">
+          <a href="#contact" class="hidden sm:inline-flex btn-primary px-5 py-2.5 text-sm font-medium rounded-full">
+            Become a Member
+          </a>
+          <button class="md:hidden p-2 hover:bg-black/5 rounded-lg transition">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="top" class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+    <!-- Background decoration -->
+    <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-emerald-50 to-transparent rounded-full blur-3xl opacity-60 -translate-y-1/2 translate-x-1/3"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-tr from-amber-50 to-transparent rounded-full blur-3xl opacity-50 translate-y-1/2 -translate-x-1/3"></div>
+
+    <div class="relative mx-auto max-w-6xl px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Left Content -->
+        <div class="max-w-xl">
+          <div class="animate-fade-up">
+            <div class="tag tag-green mb-6 animate-float">
+              <span class="w-2 h-2 rounded-full bg-[var(--accent)] mr-2 animate-pulse"></span>
+              Established 2011 • Vancouver, BC
+            </div>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-display font-semibold leading-[1.1] tracking-tight animate-fade-up delay-100">
+            Building bridges from
+            <span class="gradient-text"> Kilimanjaro to the Pacific</span>
+          </h1>
+
+          <p class="mt-6 text-lg text-[var(--fg-muted)] leading-relaxed animate-fade-up delay-200">
+            We unite Tanzanians in British Columbia through cultural events, professional networking, and community support. Welcome to your home away from home.
+          </p>
+
+          <div class="mt-10 flex flex-wrap items-center gap-4 animate-fade-up delay-300">
+            <a href="#contact" class="btn-primary px-7 py-3.5 text-sm font-medium rounded-full inline-flex items-center gap-2">
+              Join Our Community
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="#about" class="btn-outline px-7 py-3.5 text-sm font-medium rounded-full inline-flex items-center gap-2">
+              <i data-lucide="play-circle" class="w-4 h-4"></i>
+              Learn More
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="mt-14 grid grid-cols-3 gap-8 animate-fade-up delay-400">
+            <div>
+              <div class="text-3xl font-display font-semibold text-[var(--accent)]">540+</div>
+              <div class="mt-1 text-sm text-[var(--fg-muted)]">Active Members</div>
+            </div>
+            <div>
+              <div class="text-3xl font-display font-semibold text-[var(--accent)]">14</div>
+              <div class="mt-1 text-sm text-[var(--fg-muted)]">Years Strong</div>
+            </div>
+            <div>
+              <div class="text-3xl font-display font-semibold text-[var(--accent)]">4</div>
+              <div class="mt-1 text-sm text-[var(--fg-muted)]">BC Chapters</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Image Collage -->
+        <div class="relative lg:h-[580px] animate-scale-in delay-200">
+          <!-- Main Image -->
+          <div class="img-frame rounded-3xl overflow-hidden shadow-2xl shadow-black/10">
+            <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?q=80&w=2944&auto=format&fit=crop"
+                 alt="Zanzibar coastline"
+                 class="w-full h-[400px] lg:h-full object-cover">
+          </div>
+
+          <!-- Floating Card 1 -->
+          <div class="absolute -left-6 top-1/4 bg-white rounded-2xl p-4 shadow-xl shadow-black/10 border border-black/5 animate-float hidden lg:block">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center">
+                <i data-lucide="sun" class="w-5 h-5 text-white"></i>
+              </div>
+              <div>
+                <div class="font-semibold text-sm">Uhuru Day 2025</div>
+                <div class="text-xs text-[var(--fg-muted)]">Dec 9 • Vancouver</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Card 2 -->
+          <div class="absolute -right-4 bottom-20 bg-white rounded-2xl p-4 shadow-xl shadow-black/10 border border-black/5 hidden lg:block" style="animation: float 5s ease-in-out infinite; animation-delay: 1s;">
+            <div class="flex items-center gap-3">
+              <div class="flex -space-x-2">
+                <div class="w-8 h-8 rounded-full bg-emerald-100 border-2 border-white flex items-center justify-center text-xs font-semibold text-emerald-700">JM</div>
+                <div class="w-8 h-8 rounded-full bg-amber-100 border-2 border-white flex items-center justify-center text-xs font-semibold text-amber-700">AK</div>
+                <div class="w-8 h-8 rounded-full bg-blue-100 border-2 border-white flex items-center justify-center text-xs font-semibold text-blue-700">FN</div>
+              </div>
+              <div class="text-xs text-[var(--fg-muted)]">+540 members</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY -->
+  <section class="py-12 border-y border-black/5 bg-[var(--bg-alt)]">
+    <div class="mx-auto max-w-6xl px-6">
+      <p class="text-center text-xs font-medium text-[var(--fg-muted)] uppercase tracking-widest mb-8">Supported by Leading Organizations</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+        <span class="text-lg font-medium text-black/20 hover:text-black/40 transition-colors cursor-default">Tanzania High Commission</span>
+        <span class="text-lg font-medium text-black/20 hover:text-black/40 transition-colors cursor-default">BC Newcomers</span>
+        <span class="text-lg font-medium text-black/20 hover:text-black/40 transition-colors cursor-default">Swahili Vision</span>
+        <span class="text-lg font-medium text-black/20 hover:text-black/40 transition-colors cursor-default">Diaspora Connect</span>
+        <span class="text-lg font-medium text-black/20 hover:text-black/40 transition-colors cursor-default">Umoja BC</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY HIGHLIGHTS -->
+  <section id="community" class="py-24 md:py-32">
+    <div class="mx-auto max-w-6xl px-6">
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+        <div>
+          <div class="tag tag-gold mb-4">Latest Updates</div>
+          <h2 class="text-3xl md:text-4xl font-display font-semibold tracking-tight">
+            Community Highlights
+          </h2>
+          <p class="mt-3 text-[var(--fg-muted)] max-w-md">
+            See what's happening across our vibrant Tanzanian community in British Columbia.
+          </p>
+        </div>
+        <a href="#" class="text-sm font-medium text-[var(--accent)] hover:text-[var(--accent)]/80 inline-flex items-center gap-1 group">
+          View all events
+          <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+        </a>
+      </div>
+
+      <!-- Bento Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-6 gap-5">
+
+        <!-- Main Feature -->
+        <div class="md:col-span-4 card rounded-3xl overflow-hidden group">
+          <div class="img-frame h-64 md:h-80">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2940&auto=format&fit=crop"
+                 alt="Celebration event"
+                 class="w-full h-full object-cover">
+          </div>
+          <div class="p-8">
+            <div class="tag tag-green mb-4">Featured Event</div>
+            <h3 class="text-2xl font-display font-semibold">Uhuru Day Gala 2025</h3>
+            <p class="mt-3 text-[var(--fg-muted)] line-clamp-2">
+              Join us for an evening celebrating Tanzania's independence with authentic cuisine, live music, and traditional performances.
+            </p>
+            <div class="mt-6 flex items-center gap-6 text-sm text-[var(--fg-muted)]">
+              <span class="flex items-center gap-2">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+                December 9, 2025
+              </span>
+              <span class="flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                Vancouver
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Cards -->
+        <div class="md:col-span-2 flex flex-col gap-5">
+          <!-- Card 1 -->
+          <div class="card rounded-3xl p-6 flex-1">
+            <div class="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center mb-5">
+              <i data-lucide="briefcase" class="w-6 h-6 text-[var(--blue)]"></i>
+            </div>
+            <h3 class="text-lg font-semibold">Professional Network</h3>
+            <p class="mt-2 text-sm text-[var(--fg-muted)]">
+              Quarterly mixers connecting Tanzanian entrepreneurs and professionals across BC.
+            </p>
+            <a href="#" class="mt-4 text-sm font-medium text-[var(--blue)] inline-flex items-center gap-1">
+              Learn more <i data-lucide="arrow-up-right" class="w-3 h-3"></i>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card rounded-3xl p-6 flex-1">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-50 flex items-center justify-center mb-5">
+              <i data-lucide="graduation-cap" class="w-6 h-6 text-[var(--accent)]"></i>
+            </div>
+            <h3 class="text-lg font-semibold">Student Support</h3>
+            <p class="mt-2 text-sm text-[var(--fg-muted)]">
+              Housing help, mentorship, and community for students at UBC, SFU, and UVic.
+            </p>
+            <a href="#" class="mt-4 text-sm font-medium text-[var(--accent)] inline-flex items-center gap-1">
+              Get help <i data-lucide="arrow-up-right" class="w-3 h-3"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom Row -->
+        <div class="md:col-span-3 card rounded-3xl overflow-hidden">
+          <div class="img-frame h-48">
+            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=2938&auto=format&fit=crop"
+                 alt="Summer BBQ gathering"
+                 class="w-full h-full object-cover">
+          </div>
+          <div class="p-6">
+            <div class="tag tag-gold mb-3">Annual Event</div>
+            <h3 class="text-lg font-semibold">Summer BBQ Series</h3>
+            <p class="mt-2 text-sm text-[var(--fg-muted)]">Family-friendly gatherings at parks across the Lower Mainland.</p>
+          </div>
+        </div>
+
+        <div class="md:col-span-3 card rounded-3xl p-8 bg-gradient-to-br from-emerald-50 to-white">
+          <div class="flex items-start justify-between mb-6">
+            <div class="tag tag-green">Regional Chapters</div>
+            <i data-lucide="map" class="w-6 h-6 text-[var(--accent)]/40"></i>
+          </div>
+          <h3 class="text-lg font-semibold mb-6">Find Your Local Community</h3>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-black/5">
+              <div class="w-2 h-2 rounded-full bg-[var(--accent)]"></div>
+              <span class="font-medium text-sm">Vancouver</span>
+            </div>
+            <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-black/5">
+              <div class="w-2 h-2 rounded-full bg-[var(--blue)]"></div>
+              <span class="font-medium text-sm">Victoria</span>
+            </div>
+            <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-black/5">
+              <div class="w-2 h-2 rounded-full bg-[var(--gold)]"></div>
+              <span class="font-medium text-sm">Surrey</span>
+            </div>
+            <div class="flex items-center gap-3 p-3 bg-white rounded-xl border border-black/5">
+              <div class="w-2 h-2 rounded-full bg-purple-500"></div>
+              <span class="font-medium text-sm">Kelowna</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-24 md:py-32 bg-[var(--bg-alt)]">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="tag tag-green mb-4 mx-auto">What We Offer</div>
+        <h2 class="text-3xl md:text-4xl font-display font-semibold tracking-tight">
+          Karibu Sana — You Are Welcome
+        </h2>
+        <p class="mt-4 text-[var(--fg-muted)]">
+          TanBC provides resources and support to help Tanzanians thrive in British Columbia.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Service 1 -->
+        <div class="bg-white rounded-3xl p-8 border border-black/5 hover:shadow-xl hover:shadow-black/5 transition-all duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 flex items-center justify-center mb-6">
+            <i data-lucide="users" class="w-7 h-7 text-amber-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Family Network</h3>
+          <p class="text-[var(--fg-muted)] leading-relaxed mb-6">
+            Connect with other Tanzanian families. Arrange playdates, share resources, and help children learn Swahili and cultural traditions.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-sm text-[var(--fg-muted)]">
+              <i data-lucide="check" class="w-4 h-4 text-[var(--accent)]"></i>
+              Family events & activities
+            </li>
+            <li class="flex items-center gap-2 text-sm text-[var(--fg-muted)]">
+              <i data-lucide="check" class="w-4 h-4 text-[var(--accent)]"></i>
+              Children's cultural programs
+            </li>
+            <li class="flex items-center gap-2 text-sm text-[var(--fg-muted)]">
+              <i data-lucide="check" class="w-4 h-4 text-[var(--accent)]"></i>
+              Parent support groups
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white rounded-3xl p-8 border border-black/5 hover:shadow-xl hover:shadow-black/5 transition-all duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-100 to-cyan-100 flex items-center justify-center mb-6">
+            <i data-lucide="file-text" class="w-7 h-7 text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Consular Services</h3>
+          <p class="text-[var(--fg-muted)] leading-relaxed mb-6">
+            Get guidance on passport renewals, visa applications, and official documentation through our liaison with the High Commission.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-sm text-[var(--fg-muted)]">
+              <i data-lucide="check" class="w-4 h-4 text-[var(--accent)]"></i>
+              Passport assistance
+            </li>
+            <li class="flex items-center gap-2 text-sm text-[var(--fg-muted)]">
+              <i data-lucide="check" class="w-4 h-4 text-[var(--accent)]"></i>
+              Document notarization
+            </li>
+            <li class="flex items-center gap-2 text-sm text-[var(--fg-muted)]">
+              <i data-lucide="check" class="w-4 h-4 text-[var(--accent)]"></i>
+              High Commission liaison
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white rounded-3xl p-8 border border-black/5 hover:shadow-xl hover:shadow-black/5 transition-all duration-300">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-100 to-green-100 flex items-center justify-center mb-6">
+            <i data-lucide="heart-handshake" class="w-7 h-7 text-emerald-600"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">New Arrival Support</h3>
+          <p class="text-[var(--fg-muted)] leading-relaxed mb-6">
+            Moving to BC? We help newcomers settle in with housing guidance, job connections, and integration support.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-sm text-[var(--fg-muted)]">
+              <i data-lucide="check" class="w-4 h-4 text-[var(--accent)]"></i>
+              Settlement guidance
+            </li>
+            <li class="flex items-center gap-2 text-sm text-[var(--fg-muted)]">
+              <i data-lucide="check" class="w-4 h-4 text-[var(--accent)]"></i>
+              Housing resources
+            </li>
+            <li class="flex items-center gap-2 text-sm text-[var(--fg-muted)]">
+              <i data-lucide="check" class="w-4 h-4 text-[var(--accent)]"></i>
+              Career networking
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section id="about" class="py-24 md:py-32">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <!-- Image Side -->
+        <div class="relative">
+          <div class="img-frame rounded-3xl overflow-hidden shadow-2xl shadow-black/10">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2832&auto=format&fit=crop"
+                 alt="Community gathering"
+                 class="w-full h-[500px] object-cover">
+          </div>
+          <!-- Quote Card -->
+          <div class="absolute -bottom-8 -right-8 bg-white rounded-2xl p-6 shadow-xl shadow-black/10 border border-black/5 max-w-xs hidden lg:block">
+            <div class="flex gap-1 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400 text-amber-400"></i>
+            </div>
+            <p class="text-sm text-[var(--fg-muted)] italic">
+              "TanBC helped me find housing and introduced me to friends who became family."
+            </p>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center text-white font-semibold text-sm">JD</div>
+              <div>
+                <div class="font-medium text-sm">Juma D.</div>
+                <div class="text-xs text-[var(--fg-muted)]">Member since 2015</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Side -->
+        <div>
+          <div class="tag tag-green mb-6">Our Story</div>
+          <h2 class="text-3xl md:text-4xl font-display font-semibold tracking-tight leading-tight">
+            Growing stronger together since 2011
+          </h2>
+          <p class="mt-6 text-[var(--fg-muted)] text-lg leading-relaxed">
+            TanBC was founded by a small group of Tanzanian families who wanted to preserve their heritage while building new lives in Canada. Today, we're a thriving community of over 540 members across British Columbia.
+          </p>
+          <p class="mt-4 text-[var(--fg-muted)] leading-relaxed">
+            Our mission is simple: to provide a supportive network where Tanzanians can connect, celebrate their culture, and help each other succeed. From Uhuru Day celebrations to professional networking events, we create opportunities for meaningful connection.
+          </p>
+
+          <div class="mt-10 p-6 bg-emerald-50 rounded-2xl border border-emerald-100">
+            <p class="font-display text-xl text-[var(--accent)] italic">
+              "Pamoja Tunajenga"
+            </p>
+            <p class="mt-2 text-sm text-[var(--fg-muted)]">Together We Build — Our guiding motto</p>
+          </div>
+
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a href="#contact" class="btn-primary px-6 py-3 text-sm font-medium rounded-full inline-flex items-center gap-2">
+              Join Our Community
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="btn-outline px-6 py-3 text-sm font-medium rounded-full inline-flex items-center gap-2">
+              <i data-lucide="download" class="w-4 h-4"></i>
+              Constitution
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTO STRIP -->
+  <section class="py-12 overflow-hidden border-y border-black/5">
+    <div class="flex gap-4 animate-[marquee_50s_linear_infinite]">
+      <div class="img-frame flex-shrink-0 w-72 h-48 rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=2832&auto=format&fit=crop" alt="Kilimanjaro" class="w-full h-full object-cover">
+      </div>
+      <div class="img-frame flex-shrink-0 w-72 h-48 rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1559511260-66a654ae982a?q=80&w=2836&auto=format&fit=crop" alt="Vancouver" class="w-full h-full object-cover">
+      </div>
+      <div class="img-frame flex-shrink-0 w-72 h-48 rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?q=80&w=2942&auto=format&fit=crop" alt="Safari" class="w-full h-full object-cover">
+      </div>
+      <div class="img-frame flex-shrink-0 w-72 h-48 rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1609825488888-3a766db05542?q=80&w=2832&auto=format&fit=crop" alt="Sunset" class="w-full h-full object-cover">
+      </div>
+      <div class="img-frame flex-shrink-0 w-72 h-48 rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?q=80&w=2940&auto=format&fit=crop" alt="Mountains" class="w-full h-full object-cover">
+      </div>
+      <div class="img-frame flex-shrink-0 w-72 h-48 rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?q=80&w=2934&auto=format&fit=crop" alt="City" class="w-full h-full object-cover">
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="img-frame flex-shrink-0 w-72 h-48 rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=80&w=2832&auto=format&fit=crop" alt="Kilimanjaro" class="w-full h-full object-cover">
+      </div>
+      <div class="img-frame flex-shrink-0 w-72 h-48 rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1559511260-66a654ae982a?q=80&w=2836&auto=format&fit=crop" alt="Vancouver" class="w-full h-full object-cover">
+      </div>
+      <div class="img-frame flex-shrink-0 w-72 h-48 rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?q=80&w=2942&auto=format&fit=crop" alt="Safari" class="w-full h-full object-cover">
+      </div>
+      <div class="img-frame flex-shrink-0 w-72 h-48 rounded-2xl overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1609825488888-3a766db05542?q=80&w=2832&auto=format&fit=crop" alt="Sunset" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section id="contact" class="py-24 md:py-32 bg-gradient-to-b from-white to-emerald-50">
+    <div class="mx-auto max-w-xl px-6 text-center">
+      <div class="tag tag-green mb-6 mx-auto">Get Started</div>
+      <h2 class="text-3xl md:text-4xl font-display font-semibold tracking-tight">
+        Join the TanBC Family
+      </h2>
+      <p class="mt-4 text-[var(--fg-muted)]">
+        Become a member to receive newsletters, event invitations, and connect with the community.
+      </p>
+
+      <!-- Form -->
+      <div class="mt-10 bg-white rounded-3xl p-8 shadow-xl shadow-black/5 border border-black/5 text-left">
+        <div class="grid grid-cols-2 gap-4 mb-4">
+          <div>
+            <label class="block text-sm font-medium text-[var(--fg)] mb-2">First Name</label>
+            <input type="text" placeholder="Baraka" class="w-full px-4 py-3 rounded-xl border border-black/10 focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20 outline-none transition-all text-sm">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-[var(--fg)] mb-2">Last Name</label>
+            <input type="text" placeholder="Mwamba" class="w-full px-4 py-3 rounded-xl border border-black/10 focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20 outline-none transition-all text-sm">
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-[var(--fg)] mb-2">Email Address</label>
+          <input type="email" placeholder="you@example.com" class="w-full px-4 py-3 rounded-xl border border-black/10 focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20 outline-none transition-all text-sm">
+        </div>
+        <div class="mb-6">
+          <label class="block text-sm font-medium text-[var(--fg)] mb-2">Your Region</label>
+          <select class="w-full px-4 py-3 rounded-xl border border-black/10 focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent)]/20 outline-none transition-all text-sm bg-white">
+            <option value="">Select region...</option>
+            <option value="vancouver">Vancouver</option>
+            <option value="victoria">Victoria</option>
+            <option value="surrey">Surrey</option>
+            <option value="kelowna">Kelowna</option>
+            <option value="other">Other BC Region</option>
+          </select>
+        </div>
+        <button type="button" class="btn-primary w-full py-4 text-sm font-semibold rounded-xl flex items-center justify-center gap-2">
+          <i data-lucide="heart" class="w-4 h-4"></i>
+          Join Community
+        </button>
+        <p class="text-xs text-center text-[var(--fg-muted)] mt-4">
+          By joining, you agree to our community guidelines.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#1A1A1A] text-white pt-20 pb-10">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="grid md:grid-cols-4 gap-12 mb-16">
+        <!-- Brand -->
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center">
+              <span class="text-white font-bold">T</span>
+            </div>
+            <span class="font-semibold text-xl">TanBC</span>
+          </div>
+          <p class="text-white/60 max-w-sm leading-relaxed">
+            Non-profit organization dedicated to the welfare and unity of Tanzanians living in British Columbia, Canada. Registered since 2011.
+          </p>
+          <div class="flex gap-3 mt-6">
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              <i data-lucide="facebook" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+            <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h4 class="font-semibold mb-4">Organization</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-white/60 hover:text-white transition-colors text-sm">Constitution</a></li>
+            <li><a href="#" class="text-white/60 hover:text-white transition-colors text-sm">Committee</a></li>
+            <li><a href="#" class="text-white/60 hover:text-white transition-colors text-sm">Elections</a></li>
+            <li><a href="#" class="text-white/60 hover:text-white transition-colors text-sm">Financials</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Resources</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-white/60 hover:text-white transition-colors text-sm">New Members</a></li>
+            <li><a href="#" class="text-white/60 hover:text-white transition-colors text-sm">Events</a></li>
+            <li><a href="#" class="text-white/60 hover:text-white transition-colors text-sm">Photo Gallery</a></li>
+            <li><a href="#" class="text-white/60 hover:text-white transition-colors text-sm">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-white/40">© 2025 TanBC. All rights reserved.</p>
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+          <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+          <span class="w-3 h-3 rounded-full bg-blue-500"></span>
+          <span class="w-3 h-3 rounded-full bg-black border border-white/30"></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Custom JavaScript -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

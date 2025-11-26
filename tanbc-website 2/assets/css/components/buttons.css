@@ -1,0 +1,30 @@
+/* TanBC Website - Button Components */
+
+/* ============================================
+   Primary Button
+   ============================================ */
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary:hover {
+  background: #155C33;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px rgba(27, 115, 64, 0.25);
+}
+
+/* ============================================
+   Outline Button
+   ============================================ */
+.btn-outline {
+  border: 1.5px solid #E5E5E5;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
